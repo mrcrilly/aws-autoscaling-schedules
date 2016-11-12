@@ -1,0 +1,16 @@
+environments:
+  - asg: production
+    schedules:
+      - name: Auto Start 
+        iso_date: 2016-11-11T210000
+        cronjob: 00 21 * * *
+        min: 0
+        max: 4
+        desired: 2
+
+      - name: Auto Stop
+        iso_date: 2016-11-11T090000
+        cronjob: 00 09 * * *
+        min: 0
+        max: 4
+        desired: 0
